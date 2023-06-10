@@ -3,7 +3,7 @@ interface Board {
 }
 
 type TypedColumn = "Backlogs" | "Inprogress" | "Done";
-type TypedPrority = "Low" | "Medium" | "High";
+type TypedPriority = "Low" | "Medium" | "High";
 
 interface Column {
   id: TypedColumn;
@@ -14,7 +14,7 @@ interface Todo {
   $id: string;
   $createdAt: string;
   title: string;
-  priority: TypedPrority;
+  priority: TypedPriority;
   status: TypedColumn;
   image?: Image;
 }
